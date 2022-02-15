@@ -15,7 +15,7 @@ class EmailService:
 		server.ehlo()
 		server.starttls()
 		server.ehlo()
-		server.login(fromaddr, "Kancler1988!")
+		server.login(fromaddr, "Your Password!")
 		text = msg.as_string()
 		server.sendmail(fromaddr, toaddr, text)
 		server.quit()
